@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+   int x,n,pow=1,w;
+   printf("enter the number = ");
+   scanf("%d",&x);
+   printf("enter the power = ");
+   scanf(" %d",&n);
+   w=n;
+   if(x==0 && n==0)
+   printf("the value is not defined");
+   else if(n>0)
+   {
+    while (true)
+    {
+        pow*=x;
+        n=n-1;
+        if(n==3)
+        break;
+    }
+    printf("%d^%d is equal to %d",x,w,pow);
+   }
+   else
+   printf("%d^%d is 1",x,w); 
+   return 0;
+}
