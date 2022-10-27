@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    printf("enter the first number a = ");
+    scanf("%d",&a);
+    printf("enter the second number b = ");
+    scanf("%d",&b);
+    printf("press 1 if you want to swap varibles without using 3rd variable : ");
+    printf("\npress 2 if you want to swap varibles with using 3rd variable : ");
+    scanf("%d",&d);
+    printf(" \nvalues before swaping a = %d b = %d",a,b);
+    //without using 3rd variable
+    if(d==1)
+    {
+        a=a+b;
+        b=a-b;
+        a=a-b;
+    }
+    //with using 3rdvariable
+    else if(d==2)
+    {
+        c=a;
+        a=b;
+        b=c;
+    }
+    else
+    printf("\ninvalid input");
+    printf(" \nvalues after swapping a = %d  b = %d",a,b);
+    return 0;
+}
