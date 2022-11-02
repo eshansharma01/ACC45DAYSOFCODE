@@ -1,0 +1,65 @@
+#include<stdio.h>
+int main()
+{
+    int n1,count,n2;
+    int d0=0,d1=0,d2=0,d3=0,d4=0,d5=0,d6=0,d7=0,d8=0,d9=0;
+    printf("Enter any number = ");
+    scanf("%d",&n1);
+    n2=n1;
+    while (n1>0)
+    {
+        count=n1%10;
+        if (count==0)
+        {
+           d0++; 
+        }
+        else if(count==1)
+        {
+            d1++;
+        }
+        else if(count==3)
+        {
+            d3++;
+        }
+        else if(count==4)
+        {
+            d4++;
+        }
+        else if(count==5)
+        {
+            d5++;
+        }
+        else if(count==6)
+        {
+            d6++;
+        }
+        else if(count==7)
+        {
+            d7++;
+        }
+        else if (count==8)
+        {
+            d8++;
+        }
+        else if (count==9)
+        {
+            d9++;
+        }
+        else
+        ;
+        n1=n1/10;
+    }
+    printf("\nnumber of 0s in %d is = %d",n2,d0);
+    printf("\nnumber of 1s in %d is = %d",n2,d1);
+    printf("\nnumber of 2s in %d is = %d",n2,d2);
+    printf("\nnumber of 3s in %d is = %d",n2,d3);
+    printf("\nnumber of 4s in %d is = %d",n2,d4);
+    printf("\nnumber of 5s in %d is = %d",n2,d5);
+    printf("\nnumber of 6s in %d is = %d",n2,d6);
+    printf("\nnumber of 7s in %d is = %d",n2,d7);
+    printf("\nnumber of 8s in %d is = %d",n2,d8);
+    printf("\nnumber of 9s in %d is = %d",n2,d9);
+    return 0;
+
+
+}
