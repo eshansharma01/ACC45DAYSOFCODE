@@ -1,0 +1,18 @@
+#include <stdio.h>
+int revSen();
+int main() {
+    printf("Enter a sentence: ");
+    revSen();
+    return 0;
+}
+
+int revSen() 
+{
+    char c;
+    scanf("%c", &c);
+    if (c != '\n') {
+        revSen();
+        printf("%c", c);
+    }
+    return 0;
+}
