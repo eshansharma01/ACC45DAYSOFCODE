@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,l1;
+    printf("Enter the size of array: ");
+    scanf("%d",&n);
+    int ar[n];
+    for (i=0;i<n;i++)
+    {
+        scanf("%d",&ar[i]);
+    }
+    for (i=0;i<n;i++)
+    {
+        if(ar[0]<ar[i])
+        {
+            l1=ar[0];
+            ar[0]=ar[i];
+        }
+        
+    }
+    for (i=1;i<n;i++)
+    {
+        if (ar[1]<ar[i] && ar[i]!=ar[0])
+        {
+            ar[1]=ar[i];
+        }
+    }
+    if (ar[1<l1])
+    {
+        ar[1]=l1;
+    }
+    printf("second largest is %d",ar[1]);
+    return 0;
+}
