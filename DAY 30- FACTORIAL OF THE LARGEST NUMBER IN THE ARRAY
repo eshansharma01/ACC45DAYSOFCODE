@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int n,i;
+    printf("Enter the size of array: ");
+    scanf("%d",&n);
+    int arr[n];
+    for (i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for (i=0;i<n;i++)
+    {
+        if (arr[0]<arr[i])
+        {
+            arr[0]=arr[i];
+        }
+    }
+    int fact=1;
+    for (i=1;i<=arr[0];i++)
+    {
+        fact=fact*i;
+    }
+    printf("Factorial of largest no. %d is %d",arr[0],fact);
+    return 0;
+}
