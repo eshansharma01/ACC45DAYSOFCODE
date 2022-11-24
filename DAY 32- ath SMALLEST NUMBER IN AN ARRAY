@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,j;
+    printf("Enter the size of array: ");
+    scanf("%d",&n);
+    int arr[n];
+    for (i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    int sml,count,m;
+    printf("Enter the ath smallest element: ");
+    scanf("%d",&m);
+    for (i=0;i<n;i++)
+    {
+        for (j=0,count=0;j<n;j++)
+        {
+            if (arr[i]>arr[j])
+            count++;
+        }
+        if (count==--m)
+        sml=arr[i];
+        ++m;
+    }
+    printf("answer: %d",sml);
+    return 0;
